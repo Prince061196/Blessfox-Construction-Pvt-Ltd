@@ -18,6 +18,7 @@
                     <div class="logo-sub">Pvt Ltd</div>
                 </div>
             </div>
+            <button class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>                
                 <li><a href="#services">Services</a></li>
@@ -503,6 +504,14 @@
             e.preventDefault();
             alert('Thank you for your message! We will contact you within 24 hours.');
             this.reset();
+        });
+
+        // Toggle dropdown menu for mobile
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
         });
     </script>
 </body>
