@@ -525,14 +525,7 @@ footer {
     }
 }
 
-@media (max-width: 768px) and (orientation: landscape) {
-    .menu-toggle {
-        display: none;
-    }
-    .nav-links {
-        display: flex;
-    }
-}
+/* Remove landscape override so mobile always uses hamburger */
 
 /* New profile sections */
 .light-section {
