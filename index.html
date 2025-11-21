@@ -409,7 +409,11 @@
                 </div>
                 <div class="contact-form">
                     <h3>Request a Quote</h3>
-                    <form>
+                    <form action="https://formsubmit.co/blessfoxconstructionpvtltd@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="New Quote Request - BlessFox Construction">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="text" name="_honey" style="display:none">
                         <div class="form-group">
                             <label for="name">Full Name</label>
                             <input type="text" id="name" name="name" required>
@@ -499,22 +503,7 @@
             });
         });
 
-        // Form submission handler
-        document.querySelector('form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const name = document.getElementById('name').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const phone = document.getElementById('phone').value.trim();
-            const project = document.getElementById('project').value;
-            const details = document.getElementById('message').value.trim();
-
-            const to = 'blessfoxconstructionpvtltd@gmail.com';
-            const subject = `New Quote Request from ${name}`;
-            const body = `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nProject Type: ${project}\n\nDetails:\n${details}`;
-
-            const mailto = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-            window.location.href = mailto;
-        });
+        
 
         // Toggle dropdown menu for mobile
         const menuToggle = document.querySelector('.menu-toggle');
