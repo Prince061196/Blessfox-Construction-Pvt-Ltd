@@ -327,7 +327,7 @@
                     <p>Leads the company with strategic vision and hands‑on expertise. His leadership has guided the successful completion of numerous commercial, residential, and infrastructure projects.</p>
                 </article>
                 <article class="team-card">
-                    <h3>Blessing Maponde</h3>
+                    <h3>XYZ</h3>
                     <p class="role">Non‑Executive Director</p>
                     <p>Contributes to shaping the company’s long‑term strategy. Supports executive decisions to ensure alignment with shareholder interests.</p>
                 </article>
@@ -394,7 +394,7 @@
                         <span>✉️</span>
                         <div>
                             <strong>Email:</strong><br>
-                            info@blessfoxconstruction.com
+                            blessfoxconstructionpvtltd@gmail.com
                         </div>
                     </div>
                     <div class="contact-item">
@@ -502,8 +502,18 @@
         // Form submission handler
         document.querySelector('form').addEventListener('submit', function(e) {
             e.preventDefault();
-            alert('Thank you for your message! We will contact you within 24 hours.');
-            this.reset();
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const project = document.getElementById('project').value;
+            const details = document.getElementById('message').value.trim();
+
+            const to = 'blessfoxconstructionpvtltd@gmail.com';
+            const subject = `New Quote Request from ${name}`;
+            const body = `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nProject Type: ${project}\n\nDetails:\n${details}`;
+
+            const mailto = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            window.location.href = mailto;
         });
 
         // Toggle dropdown menu for mobile
