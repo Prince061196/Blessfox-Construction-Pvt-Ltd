@@ -411,9 +411,9 @@
                     <h3>Request a Quote</h3>
                     <form action="https://formsubmit.co/blessfoxconstructionpvtltd@gmail.com" method="POST">
                         <input type="hidden" name="_subject" value="New Quote Request - BlessFox Construction">
-                        <input type="hidden" name="_template" value="table">
                         <input type="hidden" name="_captcha" value="false">
-                        <input type="text" name="_honey" style="display:none">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_next" value="https://61196.github.io/#contact">
                         <div class="form-group">
                             <label for="name">Full Name</label>
                             <input type="text" id="name" name="name" required>
@@ -440,7 +440,7 @@
                             <label for="message">Project Details</label>
                             <textarea id="message" name="message" rows="4" placeholder="Tell us about your project..."></textarea>
                         </div>
-                        <button type="submit" class="btn btn-full-width" >Send Message</button>
+                        <button type="submit" class="btn btn-full-width">Send Message</button>
                     </form>
                 </div>
             </div>
@@ -503,7 +503,7 @@
             });
         });
 
-        
+        // Allow native form submission (FormSubmit)
 
         // Toggle dropdown menu for mobile
         const menuToggle = document.querySelector('.menu-toggle');
