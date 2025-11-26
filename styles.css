@@ -460,6 +460,24 @@ footer {
     transition: transform 0.3s ease;
 }
 
+.gallery-image video,
+.gallery-image iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    background: #000;
+}
+
+.gallery-image.video {
+    aspect-ratio: 16/9;
+    height: auto;
+}
+
+.gallery-image.video .gallery-overlay {
+    display: none;
+}
+
 .gallery-item:hover .gallery-image img {
     transform: scale(1.1);
 }
