@@ -155,7 +155,7 @@ nav {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(26, 35, 50, 0.85), rgba(26, 35, 50, 0.85)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23ff6b35" width="1200" height="600"/><polygon fill="%23e55a2b" points="0,600 400,200 800,400 1200,100 1200,600"/></svg>');
+    background-image: linear-gradient(rgba(26, 35, 50, 0.85), rgba(26, 35, 50, 0.85)), url('gallery/construction.jpeg');
     background-size: cover;
     background-position: center;
     height: 100vh;
