@@ -155,7 +155,7 @@ nav {
 
 /* Hero Section */
 .hero {
-    background-image: linear-gradient(rgba(26, 35, 50, 0.85), rgba(26, 35, 50, 0.85)), url('gallery/construction.jpeg');
+    background-image: linear-gradient(rgba(26, 35, 50, 0.85), rgba(26, 35, 50, 0.85)), url('gallery/construction.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -873,3 +873,4 @@ section {
 footer {
     border-top: 1px solid rgba(255,255,255,0.04);
 }
+
